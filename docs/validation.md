@@ -15,6 +15,8 @@ Authoring checks performed on 2026-11-01, on Windows with Python 3.13 and Skills
 
 The repository's [Actions workflow](https://github.com/SaeedAngiz1/Einstein-skill/actions/workflows/validate.yml) runs package validation on Ubuntu and Windows with Python 3.11 and 3.13. Consult its live run results for CI status; defining the workflow alone isn't evidence of a passing run.
 
+The first CI attempt failed during dependency-cache setup because the default lookup didn't include `requirements-dev.txt`. The workflow now explicitly names that file. This was a workflow configuration failure before package validation ran.
+
 These checks establish package and installer behavior. They don't establish how a Claude Code or Codex model behaves when using the skill. The 10 behavioral cases are **definitions**, not executed model evaluations. No controlled comparison, paid inference, live workflow, or productivity benchmark was performed.
 
 The source clip was processed locally. Original media and its transcript are excluded from the package.
