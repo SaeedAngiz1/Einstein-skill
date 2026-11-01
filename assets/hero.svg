@@ -1,37 +1,83 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
-  <title id="title">Einstein-skill</title>
-  <desc id="desc">Think first. Build less. Prove it. A focused workflow for AI agents.</desc>
+  <title id="title">Einstein-skill — Think first. Build less. Prove it.</title>
+  <desc id="desc">A dark editorial banner with an animated orbital emblem and four phases: clarify, simplify, focus, and verify.</desc>
   <defs>
-    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1">
-      <stop stop-color="#0c1424"/>
-      <stop offset="1" stop-color="#080c14"/>
+    <style>
+      @font-face { font-family: Space; src: url('fonts/SpaceGrotesk.ttf') format('truetype'); font-weight: 300 700; }
+      text { font-family: Space, Bahnschrift, sans-serif; }
+      .mono { font-family: Consolas, monospace; }
+    </style>
+    <linearGradient id="canvas" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#0a101a"/><stop offset="1" stop-color="#080c12"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" x2="1">
-      <stop stop-color="#a5b4fc"/>
-      <stop offset="1" stop-color="#67e8f9"/>
+    <radialGradient id="halo">
+      <stop stop-color="#294d42" stop-opacity=".44"/><stop offset=".65" stop-color="#142d2e" stop-opacity=".2"/><stop offset="1" stop-color="#080c12" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="core" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#243b35"/><stop offset=".52" stop-color="#142329"/><stop offset="1" stop-color="#0d1722"/>
     </linearGradient>
-    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M48 0H0V48" fill="none" stroke="#253149" stroke-width="1"/>
-    </pattern>
+    <linearGradient id="type" x1="0" x2="1"><stop stop-color="#c8ff8a"/><stop offset="1" stop-color="#77e4d1"/></linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#273740" stroke-opacity=".28"/></pattern>
+    <clipPath id="clip"><rect width="1280" height="640" rx="28"/></clipPath>
   </defs>
-  <rect width="1280" height="640" rx="24" fill="url(#background)"/>
-  <rect x="740" width="540" height="640" fill="url(#grid)" opacity="0.42"/>
-  <path d="M72 80h38" stroke="#a5b4fc" stroke-width="4"/>
-  <text x="127" y="87" fill="#b8c6dc" font-family="Arial, sans-serif" font-size="18" letter-spacing="3">AI WORKFLOW / EINSTEIN-SKILL</text>
-  <text x="72" y="218" fill="#f1f5ff" font-family="Arial, sans-serif" font-weight="700" font-size="82" letter-spacing="-3">Think first.</text>
-  <text x="72" y="311" fill="#f1f5ff" font-family="Arial, sans-serif" font-weight="700" font-size="82" letter-spacing="-3">Build less.</text>
-  <text x="72" y="404" fill="url(#accent)" font-family="Arial, sans-serif" font-weight="700" font-size="82" letter-spacing="-3">Prove it.</text>
-  <text x="75" y="470" fill="#9facc1" font-family="Arial, sans-serif" font-size="23">Clear assumptions. Focused changes. Real evidence.</text>
-  <rect x="74" y="528" width="272" height="40" rx="20" fill="#172238" stroke="#34445f"/>
-  <text x="95" y="554" fill="#c8d5ea" font-family="Arial, sans-serif" font-size="16">OPEN SOURCE / AGENT SKILLS</text>
-  <g transform="translate(942 310)">
-    <circle r="140" fill="#0e192b" stroke="#2e405f"/>
-    <ellipse rx="175" ry="57" fill="none" stroke="#6d7fb0" stroke-width="2" transform="rotate(-35)"/>
-    <ellipse rx="175" ry="57" fill="none" stroke="#6d7fb0" stroke-width="2" transform="rotate(35)"/>
-    <circle cx="143" cy="-86" r="8" fill="#67e8f9"/>
-    <circle cx="-139" cy="-89" r="8" fill="#a5b4fc"/>
-    <rect x="-56" y="-56" width="112" height="112" rx="28" fill="#182944" stroke="#a5b4fc" stroke-width="2"/>
-    <path d="M-23 0l16 17L26-20" fill="none" stroke="#b7c9ff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect width="1280" height="640" fill="#0d1117"/>
+  <g clip-path="url(#clip)">
+    <rect width="1280" height="640" fill="url(#canvas)"/>
+    <rect x="688" width="592" height="640" fill="url(#grid)"/>
+    <circle cx="984" cy="304" r="340" fill="url(#halo)"/>
+    <path d="M72 100H1208M72 538H1208" stroke="#26343d" stroke-opacity=".75"/>
+    <path d="M72 100H168" stroke="#b9ff66" stroke-width="2"/>
+    <circle cx="80" cy="64" r="5" fill="#b9ff66"/>
+    <text x="100" y="71" fill="#dce8e8" font-size="22" font-weight="600" letter-spacing="3">EINSTEIN / SKILL</text>
+    <text x="1032" y="69" fill="#8a9da5" font-size="16" class="mono">AI WORKFLOW</text>
+    <text x="68" y="226" fill="#f3f6f4" font-size="90" font-weight="600" letter-spacing="-4">Think first.</text>
+    <text x="68" y="325" fill="#f3f6f4" font-size="90" font-weight="600" letter-spacing="-4">Build less.</text>
+    <text x="68" y="424" fill="url(#type)" font-size="90" font-weight="600" letter-spacing="-4">Prove it.</text>
+    <text x="74" y="486" fill="#9badb4" font-size="25">A focused workflow for AI agents.</text>
+    <g transform="translate(976 290)">
+      <circle r="162" fill="#0d181e" fill-opacity=".6" stroke="#304b47"/>
+      <circle r="145" fill="none" stroke="#253d3c" stroke-dasharray="2 10"/>
+      <ellipse rx="203" ry="68" fill="none" stroke="#628b80" stroke-opacity=".68" transform="rotate(-28)"/>
+      <ellipse rx="203" ry="68" fill="none" stroke="#649eab" stroke-opacity=".55" transform="rotate(35)"/>
+      <ellipse rx="203" ry="68" fill="none" stroke="#7777a4" stroke-opacity=".45" transform="rotate(92)"/>
+      <g transform="rotate(-28)">
+        <g>
+          <animateTransform attributeName="transform" type="rotate" values="0;360" dur="12s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1"/>
+          <circle cx="162" r="10" fill="#b9ff66" fill-opacity=".1"/><circle cx="162" r="5" fill="#b9ff66"/>
+        </g>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="360;0" dur="12s" repeatCount="indefinite" calcMode="spline" keySplines=".4 0 .6 1"/>
+        <circle cy="-145" r="5" fill="#8fe9da"/>
+      </g>
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 0;0 -7;0 0" dur="6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".4 0 .6 1;.4 0 .6 1"/>
+        <rect x="-67" y="-67" width="134" height="134" rx="34" fill="#090f17" stroke="#527366" stroke-opacity=".5"/>
+        <rect x="-62" y="-62" width="124" height="124" rx="30" fill="url(#core)" stroke="#a9df9a" stroke-opacity=".6"/>
+        <path d="M-22-26H24M-22 0H13M-22 26H24M-22-26V26" stroke="#c5ff9a" stroke-width="8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+      </g>
+      <circle cx="-162" cy="0" r="3" fill="#799088"/><circle cx="162" cy="0" r="3" fill="#799088"/>
+    </g>
+    <rect x="813" y="467" width="326" height="43" rx="21" fill="#15231f" stroke="#41614e" stroke-opacity=".6"/>
+    <g text-anchor="middle" font-size="17" font-weight="500" letter-spacing="2">
+      <text x="976" y="494" fill="#c5ff9a" opacity="1">01 / CLARIFY
+        <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.22;.25;.97;1" dur="12s" repeatCount="indefinite"/>
+      </text>
+      <text x="976" y="494" fill="#c5ff9a" opacity="0">02 / SIMPLIFY
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.22;.25;.47;.5;1" dur="12s" repeatCount="indefinite"/>
+      </text>
+      <text x="976" y="494" fill="#c5ff9a" opacity="0">03 / FOCUS
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.47;.5;.72;.75;1" dur="12s" repeatCount="indefinite"/>
+      </text>
+      <text x="976" y="494" fill="#c5ff9a" opacity="0">04 / VERIFY
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.72;.75;.97;1" dur="12s" repeatCount="indefinite"/>
+      </text>
+    </g>
+    <text x="73" y="582" fill="#8fa49f" class="mono" font-size="16" letter-spacing="1">OPEN SOURCE</text>
+    <circle cx="215" cy="576" r="2" fill="#49625b"/>
+    <text x="236" y="582" fill="#8fa49f" class="mono" font-size="16" letter-spacing="1">MARKDOWN NATIVE</text>
+    <circle cx="421" cy="576" r="2" fill="#49625b"/>
+    <text x="443" y="582" fill="#8fa49f" class="mono" font-size="16" letter-spacing="1">NO API KEY</text>
+    <text x="1207" y="582" fill="#b9ff66" text-anchor="end" font-size="17">Your request. A verified result.</text>
   </g>
-  <text x="805" y="558" fill="#9facc1" font-family="Arial, sans-serif" font-size="18">github.com/SaeedAngiz1/Einstein-skill</text>
 </svg>

@@ -58,7 +58,7 @@ def validate() -> tuple[int, int]:
     for document in documents:
         text = document.read_text(encoding="utf-8")
         targets = re.findall(r"\[[^\]\n]*\]\(([^)\n]+)\)", text)
-        targets += re.findall(r'<img\b[^>]*\bsrc="([^"]+)"', text)
+        targets += re.findall(r'<(?:img|source)\b[^>]*\b(?:src|srcset)="([^"]+)"', text)
         for target in targets:
             target = target.strip().removeprefix("<").removesuffix(">")
             parsed = urlsplit(target)

@@ -41,4 +41,4 @@ If comparing a baseline with the skill, record matched fresh sessions and publis
 
 The first bottleneck is evidence: a memorable name and banner help people notice the repo; a reproducible result gives them a reason to share it. The next action is to record one honest demo, not add more branding.
 
-The [social preview image](../assets/social-preview.png) is ready for GitHub's repository Settings > Social preview upload. The README uses the editable [SVG source](../assets/hero.svg). Providing the image doesn't imply the repository setting has been configured.
+The [social preview image](../assets/social-preview.png) is ready for GitHub's repository Settings > Social preview upload. The README uses a [looping GIF](../assets/hero-animated.gif) rendered from the editable [SVG source](../assets/hero.svg), with the static image selected for reduced-motion preferences. Regenerate both with [scripts/render_readme.py](../scripts/render_readme.py). Providing the image doesn't imply the repository setting has been configured.
