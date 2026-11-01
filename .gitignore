@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+.env
+.env.*
+*.mp4
+*.MP4
+*.wav
+*.m4a
+transcript*.json
+.DS_Store
+Thumbs.db

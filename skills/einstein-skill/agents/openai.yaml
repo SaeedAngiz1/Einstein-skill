@@ -1,0 +1,4 @@
+interface:
+  display_name: "Einstein-skill"
+  short_description: "Think first, make focused changes, verify the result"
+  default_prompt: "Use $einstein-skill to complete this task with clear assumptions, focused changes, and evidence appropriate to the result."
